@@ -1,0 +1,46 @@
+.popCntainer {
+  position: fixed;
+
+  left: 10%;
+  top: 15%;
+  width: 80%;
+  height: 0;
+
+  /* 因為 原圖 w:660 h:371 當寬度是width: 80%  高度是 371 / 660 * 80% = 44.96% */
+  padding-bottom: 44.96%;
+
+  background-image: url("http://img.1ppt.com/uploads/allimg/1704/1_170429150113_1.jpg");
+  background-size: cover;
+}
+
+.popText {
+  position: absolute;
+
+  left: 15%;
+  top: 20%;
+  width: 70%;
+  bottom: -15px;
+
+  word-break: break-all;
+  text-align: justify;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  color: black;
+}
+
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  .popCntainer {
+    background-image: url("https://truth.bahamut.com.tw/s01/201609/6849fdfdac87487bab490dfb8873e6e3.JPG");
+    /* 因為 原圖 w:201 h:357 當寬度是width: 80%  高度是 357 / 201 * 80% = 142% */
+    padding-bottom: 142%;
+  }
+
+  .popText {
+    left: 5%;
+    top: 10%;
+    width: 90%;
+
+    color: white;
+  }
+}
